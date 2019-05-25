@@ -2,7 +2,7 @@ using System;
 
 namespace ClangSharp
 {
-    public partial struct CXIndexAction
+    internal  partial struct CXIndexAction
     {
         public CXIndexAction(IntPtr pointer)
         {

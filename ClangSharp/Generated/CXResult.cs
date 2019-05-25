@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXResult
+    internal enum CXResult
     {
         CXResult_Success = 0,
         CXResult_Invalid = 1,

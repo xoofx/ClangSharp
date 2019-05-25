@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXLinkageKind
+    internal enum CXLinkageKind
     {
         CXLinkage_Invalid,
         CXLinkage_NoLinkage,

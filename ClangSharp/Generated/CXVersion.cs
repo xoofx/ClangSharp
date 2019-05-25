@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public partial struct CXVersion
+    internal partial struct CXVersion
     {
         public int Major;
         public int Minor;

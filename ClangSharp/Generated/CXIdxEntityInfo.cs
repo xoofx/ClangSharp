@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 
 namespace ClangSharp
 {
-    public partial struct CXIdxEntityInfo
+    internal partial struct CXIdxEntityInfo
     {
         public CXIdxEntityKind kind;
         public CXIdxEntityCXXTemplateKind templateKind;

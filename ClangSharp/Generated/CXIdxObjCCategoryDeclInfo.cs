@@ -2,7 +2,7 @@ using System;
 
 namespace ClangSharp
 {
-    public partial struct CXIdxObjCCategoryDeclInfo
+    internal partial struct CXIdxObjCCategoryDeclInfo
     {
         public IntPtr containerInfo;
         public IntPtr objcClass;

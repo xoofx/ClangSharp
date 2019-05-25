@@ -2,7 +2,7 @@ using System;
 
 namespace ClangSharp
 {
-    public partial struct IndexerCallbacks
+    internal partial struct IndexerCallbacks
     {
         public IntPtr abortQuery;
         public IntPtr diagnostic;

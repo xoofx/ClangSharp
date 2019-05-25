@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace ClangSharp
 {
-    public partial struct CXSourceRangeList : IDisposable, IReadOnlyCollection<CXSourceRange>
+    internal partial struct CXSourceRangeList : IDisposable, IReadOnlyCollection<CXSourceRange>
     {
         public unsafe CXSourceRange this[uint index] => ((CXSourceRange*)ranges)[index];
 

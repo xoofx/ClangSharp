@@ -2,7 +2,7 @@ using System;
 
 namespace ClangSharp
 {
-    public partial struct CXPrintingPolicy
+    internal  partial struct CXPrintingPolicy
     {
         public CXPrintingPolicy(IntPtr pointer)
         {

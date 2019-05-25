@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXSaveError
+    internal enum CXSaveError
     {
         CXSaveError_None = 0,
         CXSaveError_Unknown = 1,

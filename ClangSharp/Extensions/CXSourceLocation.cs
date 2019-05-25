@@ -2,7 +2,7 @@
 
 namespace ClangSharp
 {
-    public partial struct CXSourceLocation : IEquatable<CXSourceLocation>
+    internal partial struct CXSourceLocation : IEquatable<CXSourceLocation>
     {
         public static CXSourceLocation Null => clang.getNullLocation();
 

@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXTranslationUnit_Flags
+    internal enum CXTranslationUnit_Flags
     {
         CXTranslationUnit_None = 0x0,
         CXTranslationUnit_DetailedPreprocessingRecord = 0x01,

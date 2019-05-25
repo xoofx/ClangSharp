@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXDiagnosticSeverity
+    internal enum CXDiagnosticSeverity
     {
         CXDiagnostic_Ignored = 0,
         CXDiagnostic_Note = 1,

@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXTLSKind
+    internal enum CXTLSKind
     {
         CXTLS_None = 0,
         CXTLS_Dynamic,

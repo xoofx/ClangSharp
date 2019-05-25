@@ -2,7 +2,7 @@ using System;
 
 namespace ClangSharp
 {
-    public partial struct CXCursorAndRangeVisitor
+    internal partial struct CXCursorAndRangeVisitor
     {
         public IntPtr context;
         public IntPtr visit;

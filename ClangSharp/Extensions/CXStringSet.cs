@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace ClangSharp
 {
-    public partial struct CXStringSet : IDisposable, IReadOnlyCollection<CXString>
+    internal partial struct CXStringSet : IDisposable, IReadOnlyCollection<CXString>
     {
         public unsafe CXString this[uint index] => ((CXString*)Strings)[index];
 

@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXLanguageKind
+    internal enum CXLanguageKind
     {
         CXLanguage_Invalid = 0,
         CXLanguage_C,

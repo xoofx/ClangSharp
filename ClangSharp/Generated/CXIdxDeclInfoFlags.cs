@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXIdxDeclInfoFlags
+    internal enum CXIdxDeclInfoFlags
     {
         CXIdxDeclFlag_Skipped = 0x1,
     }

@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXPrintingPolicyProperty
+    internal enum CXPrintingPolicyProperty
     {
         CXPrintingPolicy_Indentation,
         CXPrintingPolicy_SuppressSpecifiers,

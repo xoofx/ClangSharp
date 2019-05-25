@@ -31,6 +31,7 @@ namespace ClangSharpPInvokeGenerator
                 AddNamespaceOption(s_rootCommand);
                 AddOutputOption(s_rootCommand);
                 AddPrefixStripOption(s_rootCommand);
+                AddVisibility(s_rootCommand);
             }
             return await s_rootCommand.InvokeAsync(args);
         }
@@ -48,6 +49,7 @@ namespace ClangSharpPInvokeGenerator
             config.Namespace = context.ParseResult.ValueForOption<string>("namespace");
             config.OutputLocation = context.ParseResult.ValueForOption<string>("output");
             config.MethodPrefixToStrip = context.ParseResult.ValueForOption<string>("prefixStrip");
+            config.DefaultVisiblity = context.ParseResult.ValueForOption<string>("visibility");
 
             var errorList = new List<string>();
 
@@ -296,6 +298,19 @@ namespace ClangSharpPInvokeGenerator
 
             var option = new Option("--prefixStrip", "The prefix to strip from the generated method bindings.", argument);
             option.AddAlias("--p");
+
+            rootCommand.AddOption(option);
+        }
+
+        private static void AddVisibility(RootCommand rootCommand)
+        {
+            var argument = new Argument();
+            argument.ArgumentType = typeof(string);
+            argument.Arity = ArgumentArity.ExactlyOne;
+            argument.Name = "visibility";
+            argument.SetDefaultValue(string.Empty);
+
+            var option = new Option("--visibility", "Visibility (`public`, `internal`) used for the generated types. Default is `public`.", argument);
 
             rootCommand.AddOption(option);
         }

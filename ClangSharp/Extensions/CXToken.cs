@@ -1,6 +1,6 @@
 ﻿namespace ClangSharp
 {
-    public partial struct CXToken
+    internal partial struct CXToken
     {
         public CXTokenKind Kind => clang.getTokenKind(this);
 

@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXCompletionContext
+    internal enum CXCompletionContext
     {
         CXCompletionContext_Unexposed = 0,
         CXCompletionContext_AnyType = 1 << 0,

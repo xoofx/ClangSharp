@@ -1,6 +1,6 @@
 ﻿namespace ClangSharp
 {
-    public partial struct CXCompletionString
+    internal partial struct CXCompletionString
     {
         public CXAvailabilityKind Availability => clang.getCompletionAvailability(this);
 

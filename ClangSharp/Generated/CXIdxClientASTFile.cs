@@ -2,7 +2,7 @@ using System;
 
 namespace ClangSharp
 {
-    public partial struct CXIdxClientASTFile
+    internal  partial struct CXIdxClientASTFile
     {
         public CXIdxClientASTFile(IntPtr pointer)
         {

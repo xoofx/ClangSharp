@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXCommentParamPassDirection
+    internal enum CXCommentParamPassDirection
     {
         CXCommentParamPassDirection_In,
         CXCommentParamPassDirection_Out,

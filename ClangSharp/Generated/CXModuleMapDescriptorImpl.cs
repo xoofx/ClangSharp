@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public partial struct CXModuleMapDescriptorImpl
+    internal partial struct CXModuleMapDescriptorImpl
     {
     }
 }

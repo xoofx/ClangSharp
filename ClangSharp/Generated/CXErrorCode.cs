@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXErrorCode
+    internal enum CXErrorCode
     {
         CXError_Success = 0,
         CXError_Failure = 1,

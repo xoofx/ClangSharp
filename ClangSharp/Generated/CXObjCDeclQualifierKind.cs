@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXObjCDeclQualifierKind
+    internal enum CXObjCDeclQualifierKind
     {
         CXObjCDeclQualifier_None = 0x0,
         CXObjCDeclQualifier_In = 0x1,

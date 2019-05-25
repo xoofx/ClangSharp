@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public partial struct CXIdxAttrInfo
+    internal partial struct CXIdxAttrInfo
     {
         public CXIdxAttrKind kind;
         public CXCursor cursor;

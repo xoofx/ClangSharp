@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXEvalResultKind
+    internal enum CXEvalResultKind
     {
         CXEval_Int = 1,
         CXEval_Float = 2,

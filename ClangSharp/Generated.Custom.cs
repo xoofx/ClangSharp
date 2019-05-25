@@ -3,7 +3,7 @@ namespace ClangSharp
     using System;
     using System.Runtime.InteropServices;
 
-    public static partial class clang
+    internal static partial class clang
     {
         internal struct _CXUnsavedFile
         {

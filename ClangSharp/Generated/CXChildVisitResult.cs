@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXChildVisitResult
+    internal enum CXChildVisitResult
     {
         CXChildVisit_Break,
         CXChildVisit_Continue,

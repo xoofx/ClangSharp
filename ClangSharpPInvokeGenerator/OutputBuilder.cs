@@ -29,7 +29,7 @@ namespace ClangSharpPInvokeGenerator
             if (isMethodClass)
             {
                 WriteLine();
-                WriteIndented("public static");
+                WriteIndented($"{config.DefaultVisiblity} static");
                 Write(' ');
 
                 if (_config.GenerateUnsafeCode)

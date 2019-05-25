@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public partial struct CXPlatformAvailability
+    internal partial struct CXPlatformAvailability
     {
         public CXString Platform;
         public CXVersion Introduced;

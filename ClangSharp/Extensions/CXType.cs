@@ -2,7 +2,7 @@
 
 namespace ClangSharp
 {
-    public partial struct CXType : IEquatable<CXType>
+    internal partial struct CXType : IEquatable<CXType>
     {
         public long AlignOf => clang.Type_getAlignOf(this);
 

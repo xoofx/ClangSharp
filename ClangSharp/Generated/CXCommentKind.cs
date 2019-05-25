@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXCommentKind
+    internal enum CXCommentKind
     {
         CXComment_Null = 0,
         CXComment_Text = 1,

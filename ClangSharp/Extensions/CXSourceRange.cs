@@ -2,7 +2,7 @@
 
 namespace ClangSharp
 {
-    public partial struct CXSourceRange : IEquatable<CXSourceRange>
+    internal partial struct CXSourceRange : IEquatable<CXSourceRange>
     {
         public CXSourceRange Create(CXSourceLocation begin, CXSourceLocation end) => clang.getRange(begin, end);
 

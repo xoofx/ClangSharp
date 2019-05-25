@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXIdxEntityRefKind
+    internal enum CXIdxEntityRefKind
     {
         CXIdxEntityRef_Direct = 1,
         CXIdxEntityRef_Implicit = 2,

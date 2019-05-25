@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXSymbolRole
+    internal enum CXSymbolRole
     {
         CXSymbolRole_None = 0,
         CXSymbolRole_Declaration = 1 << 0,

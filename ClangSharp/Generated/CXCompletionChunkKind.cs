@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXCompletionChunkKind
+    internal enum CXCompletionChunkKind
     {
         CXCompletionChunk_Optional,
         CXCompletionChunk_TypedText,

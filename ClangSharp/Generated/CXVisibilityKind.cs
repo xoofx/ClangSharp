@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXVisibilityKind
+    internal enum CXVisibilityKind
     {
         CXVisibility_Invalid,
         CXVisibility_Hidden,

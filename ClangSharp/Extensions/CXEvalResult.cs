@@ -2,7 +2,7 @@
 
 namespace ClangSharp
 {
-    public partial struct CXEvalResult : IDisposable
+    internal partial struct CXEvalResult : IDisposable
     {
         public double AsDouble => clang.EvalResult_getAsDouble(this);
 

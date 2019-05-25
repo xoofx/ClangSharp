@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public partial struct CXCursorSetImpl
+    internal partial struct CXCursorSetImpl
     {
     }
 }

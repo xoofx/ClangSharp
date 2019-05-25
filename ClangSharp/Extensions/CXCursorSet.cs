@@ -2,7 +2,7 @@
 
 namespace ClangSharp
 {
-    public partial struct CXCursorSet : IDisposable
+    internal partial struct CXCursorSet : IDisposable
     {
         public static CXCursorSet Create() => clang.createCXCursorSet();
 

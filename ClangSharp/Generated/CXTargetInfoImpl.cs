@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public partial struct CXTargetInfoImpl
+    internal partial struct CXTargetInfoImpl
     {
     }
 }

@@ -2,7 +2,7 @@ using System;
 
 namespace ClangSharp
 {
-    public partial struct CXRemapping
+    internal  partial struct CXRemapping
     {
         public CXRemapping(IntPtr pointer)
         {

@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CX_StorageClass
+    internal enum CX_StorageClass
     {
         CX_SC_Invalid,
         CX_SC_None,

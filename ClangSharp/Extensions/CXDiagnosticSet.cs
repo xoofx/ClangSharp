@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace ClangSharp
 {
-    public partial struct CXDiagnosticSet : IDisposable, IReadOnlyCollection<CXDiagnostic>
+    internal partial struct CXDiagnosticSet : IDisposable, IReadOnlyCollection<CXDiagnostic>
     {
         public CXDiagnostic this[uint index] => GetDiagnostic(index);
 

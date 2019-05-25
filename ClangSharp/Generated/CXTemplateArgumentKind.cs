@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXTemplateArgumentKind
+    internal enum CXTemplateArgumentKind
     {
         CXTemplateArgumentKind_Null,
         CXTemplateArgumentKind_Type,

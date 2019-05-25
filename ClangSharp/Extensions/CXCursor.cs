@@ -2,7 +2,7 @@
 
 namespace ClangSharp
 {
-    public partial struct CXCursor : IEquatable<CXCursor>
+    internal partial struct CXCursor : IEquatable<CXCursor>
     {
         public static CXCursor Null => clang.getNullCursor();
 

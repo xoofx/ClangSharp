@@ -2,7 +2,7 @@ using System;
 
 namespace ClangSharp
 {
-    public partial struct CXIdxDeclInfo
+    internal partial struct CXIdxDeclInfo
     {
         public IntPtr entityInfo;
         public CXCursor cursor;

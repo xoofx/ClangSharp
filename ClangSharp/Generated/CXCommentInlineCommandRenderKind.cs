@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXCommentInlineCommandRenderKind
+    internal enum CXCommentInlineCommandRenderKind
     {
         CXCommentInlineCommandRenderKind_Normal,
         CXCommentInlineCommandRenderKind_Bold,

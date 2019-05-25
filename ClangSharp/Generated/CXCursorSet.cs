@@ -2,7 +2,7 @@ using System;
 
 namespace ClangSharp
 {
-    public partial struct CXCursorSet
+    internal  partial struct CXCursorSet
     {
         public CXCursorSet(IntPtr pointer)
         {

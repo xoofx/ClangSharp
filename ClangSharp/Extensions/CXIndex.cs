@@ -2,7 +2,7 @@
 
 namespace ClangSharp
 {
-    public partial struct CXIndex : IDisposable
+    internal partial struct CXIndex : IDisposable
     {
         public static CXIndex Create(bool excludeDeclarationsFromPch = false, bool displayDiagnostics = false) => clang.createIndex(excludeDeclarationsFromPch ? 1 : 0, displayDiagnostics ? 1 : 0);
 

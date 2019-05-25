@@ -1,3 +1,11 @@
+using System.Reflection;
+using System.Runtime.CompilerServices;
+
+#if USE_INTERNAL
+[assembly:InternalsVisibleTo("ClangSharpPInvokeGenerator")]
+[assembly: InternalsVisibleTo("ClangSharp.Test")]
+#endif
+
 namespace ClangSharp
 {
     using System;

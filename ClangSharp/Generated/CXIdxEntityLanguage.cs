@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXIdxEntityLanguage
+    internal enum CXIdxEntityLanguage
     {
         CXIdxEntityLang_None = 0,
         CXIdxEntityLang_C = 1,

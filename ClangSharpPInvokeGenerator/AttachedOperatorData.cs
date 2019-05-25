@@ -3,7 +3,7 @@ using System.Diagnostics;
 
 namespace ClangSharpPInvokeGenerator
 {
-    public struct AttachedOperatorData
+    internal struct AttachedOperatorData
     {
         public AttachedOperatorData(CXCursorKind kind, string @operator)
         {

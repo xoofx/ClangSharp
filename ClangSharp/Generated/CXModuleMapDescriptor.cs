@@ -2,7 +2,7 @@ using System;
 
 namespace ClangSharp
 {
-    public partial struct CXModuleMapDescriptor
+    internal  partial struct CXModuleMapDescriptor
     {
         public CXModuleMapDescriptor(IntPtr pointer)
         {

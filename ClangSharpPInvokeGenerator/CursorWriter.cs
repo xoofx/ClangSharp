@@ -449,7 +449,7 @@ namespace ClangSharpPInvokeGenerator
                 var name = GetCursorName(cursor);
                 InitializeOutputBuilder(name);
 
-                _outputBuilder.WriteIndented("public enum");
+                _outputBuilder.WriteIndented($"{_config.DefaultVisiblity} enum");
                 _outputBuilder.Write(' ');
                 _outputBuilder.Write(EscapeName(name));
 
@@ -733,7 +733,7 @@ namespace ClangSharpPInvokeGenerator
                 var name = GetCursorName(cursor);
                 InitializeOutputBuilder(name);
 
-                _outputBuilder.WriteIndented("public");
+                _outputBuilder.WriteIndented(_config.DefaultVisiblity);
 
                 if (_config.GenerateUnsafeCode)
                 {
@@ -782,7 +782,7 @@ namespace ClangSharpPInvokeGenerator
 
                             var escapedName = EscapeName(name);
 
-                            _outputBuilder.WriteIndented("public partial struct");
+                            _outputBuilder.WriteIndented($"{ _config.DefaultVisiblity} partial struct");
                             _outputBuilder.Write(' ');
                             _outputBuilder.WriteLine(escapedName);
                             _outputBuilder.WriteBlockStart();
@@ -867,7 +867,7 @@ namespace ClangSharpPInvokeGenerator
 
                             _outputBuilder.AddUsing("System");
 
-                            _outputBuilder.WriteIndented("public partial struct");
+                            _outputBuilder.WriteIndented($"{_config.DefaultVisiblity}  partial struct");
                             _outputBuilder.Write(' ');
                             _outputBuilder.WriteLine(escapedName);
                             _outputBuilder.WriteBlockStart();
@@ -902,7 +902,7 @@ namespace ClangSharpPInvokeGenerator
                         _outputBuilder.WriteIndented("[UnmanagedFunctionPointer(CallingConvention.");
                         _outputBuilder.Write(GetCallingConventionName(cursor, pointeeType.FunctionTypeCallingConv));
                         _outputBuilder.WriteLine(")]");
-                        _outputBuilder.WriteIndented("public delegate");
+                        _outputBuilder.WriteIndented($"{_config.DefaultVisiblity} delegate");
                         _outputBuilder.Write(' ');
                         _outputBuilder.Write(GetTypeName(cursor, pointeeType.ResultType));
                         _outputBuilder.Write(' ');

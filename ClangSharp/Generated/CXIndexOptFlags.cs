@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXIndexOptFlags
+    internal enum CXIndexOptFlags
     {
         CXIndexOpt_None = 0x0,
         CXIndexOpt_SuppressRedundantRefs = 0x1,

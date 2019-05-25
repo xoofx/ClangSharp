@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXIdxEntityCXXTemplateKind
+    internal enum CXIdxEntityCXXTemplateKind
     {
         CXIdxEntity_NonTemplate = 0,
         CXIdxEntity_Template = 1,

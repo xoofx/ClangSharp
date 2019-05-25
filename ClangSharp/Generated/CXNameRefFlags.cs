@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXNameRefFlags
+    internal enum CXNameRefFlags
     {
         CXNameRange_WantQualifier = 0x1,
         CXNameRange_WantTemplateArgs = 0x2,

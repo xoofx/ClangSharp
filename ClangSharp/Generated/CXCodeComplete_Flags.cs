@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXCodeComplete_Flags
+    internal enum CXCodeComplete_Flags
     {
         CXCodeComplete_IncludeMacros = 0x01,
         CXCodeComplete_IncludeCodePatterns = 0x02,

@@ -2,7 +2,7 @@ using System;
 
 namespace ClangSharp
 {
-    public partial struct CXIdxObjCContainerDeclInfo
+    internal partial struct CXIdxObjCContainerDeclInfo
     {
         public IntPtr declInfo;
         public CXIdxObjCContainerKind kind;

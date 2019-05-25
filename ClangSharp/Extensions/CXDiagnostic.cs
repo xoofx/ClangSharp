@@ -2,7 +2,7 @@
 
 namespace ClangSharp
 {
-    public partial struct CXDiagnostic : IDisposable
+    internal partial struct CXDiagnostic : IDisposable
     {
         public static CXDiagnosticDisplayOptions DefaultDisplayOptions => (CXDiagnosticDisplayOptions)clang.defaultDiagnosticDisplayOptions();
 

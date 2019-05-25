@@ -2,7 +2,7 @@
 
 namespace ClangSharp
 {
-    public partial struct CXTargetInfo : IDisposable
+    internal partial struct CXTargetInfo : IDisposable
     {
         public int PointerWidth => clang.TargetInfo_getPointerWidth(this);
 

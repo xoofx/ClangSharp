@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXTypeKind
+    internal enum CXTypeKind
     {
         CXType_Invalid = 0,
         CXType_Unexposed = 1,

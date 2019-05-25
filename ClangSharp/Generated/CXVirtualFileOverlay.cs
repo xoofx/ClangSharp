@@ -2,7 +2,7 @@ using System;
 
 namespace ClangSharp
 {
-    public partial struct CXVirtualFileOverlay
+    internal  partial struct CXVirtualFileOverlay
     {
         public CXVirtualFileOverlay(IntPtr pointer)
         {

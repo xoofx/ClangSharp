@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXIdxObjCContainerKind
+    internal enum CXIdxObjCContainerKind
     {
         CXIdxObjCContainer_ForwardRef = 0,
         CXIdxObjCContainer_Interface = 1,

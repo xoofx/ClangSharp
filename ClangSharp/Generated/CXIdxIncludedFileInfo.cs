@@ -2,7 +2,7 @@ using System.Runtime.InteropServices;
 
 namespace ClangSharp
 {
-    public partial struct CXIdxIncludedFileInfo
+    internal partial struct CXIdxIncludedFileInfo
     {
         public CXIdxLoc hashLoc;
         [MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef = typeof(StringMarshaler))] public string filename;

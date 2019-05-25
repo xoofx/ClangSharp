@@ -2,7 +2,7 @@
 
 namespace ClangSharp
 {
-    public partial struct CXTranslationUnit : IDisposable
+    internal partial struct CXTranslationUnit : IDisposable
     {
         public static CXTranslationUnit Create(CXIndex index, string astFileName) => clang.createTranslationUnit(index, astFileName);
 

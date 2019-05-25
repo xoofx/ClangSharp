@@ -18,6 +18,8 @@ namespace ClangSharpPInvokeGenerator
                     GenerateUnsafeCode = true;
                 }
             }
+
+            DefaultVisiblity = "public";
         }
 
         public string[] ExcludedFunctions { get; set; }
@@ -35,5 +37,7 @@ namespace ClangSharpPInvokeGenerator
         public string Namespace { get; set; }
 
         public string OutputLocation { get; set; }
+
+        public string DefaultVisiblity { get; set; }
     }
 }

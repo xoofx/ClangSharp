@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXTypeLayoutError
+    internal enum CXTypeLayoutError
     {
         CXTypeLayoutError_Invalid = -1,
         CXTypeLayoutError_Incomplete = -2,

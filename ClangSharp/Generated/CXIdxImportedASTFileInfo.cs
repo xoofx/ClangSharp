@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public partial struct CXIdxImportedASTFileInfo
+    internal partial struct CXIdxImportedASTFileInfo
     {
         public CXFile file;
         public CXModule module;

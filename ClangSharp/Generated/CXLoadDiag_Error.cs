@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXLoadDiag_Error
+    internal enum CXLoadDiag_Error
     {
         CXLoadDiag_None = 0,
         CXLoadDiag_Unknown = 1,

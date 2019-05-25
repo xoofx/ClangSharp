@@ -2,7 +2,7 @@ using System;
 
 namespace ClangSharp
 {
-    public partial struct CXIdxObjCProtocolRefInfo
+    internal partial struct CXIdxObjCProtocolRefInfo
     {
         public IntPtr protocol;
         public CXCursor cursor;

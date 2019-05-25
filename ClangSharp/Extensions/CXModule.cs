@@ -1,6 +1,6 @@
 ﻿namespace ClangSharp
 {
-    public partial struct CXModule
+    internal partial struct CXModule
     {
         public CXFile AstFile => clang.Module_getASTFile(this);
 

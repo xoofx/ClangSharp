@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CX_CXXAccessSpecifier
+    internal enum CX_CXXAccessSpecifier
     {
         CX_CXXInvalidAccessSpecifier,
         CX_CXXPublic,

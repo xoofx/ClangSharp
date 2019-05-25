@@ -2,7 +2,7 @@ using System;
 
 namespace ClangSharp
 {
-    public partial struct CXIdxClientEntity
+    internal  partial struct CXIdxClientEntity
     {
         public CXIdxClientEntity(IntPtr pointer)
         {

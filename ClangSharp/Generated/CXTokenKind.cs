@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXTokenKind
+    internal enum CXTokenKind
     {
         CXToken_Punctuation,
         CXToken_Keyword,

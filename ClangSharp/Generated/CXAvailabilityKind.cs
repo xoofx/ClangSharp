@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXAvailabilityKind
+    internal enum CXAvailabilityKind
     {
         CXAvailability_Available,
         CXAvailability_Deprecated,

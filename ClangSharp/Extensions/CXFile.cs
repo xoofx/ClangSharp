@@ -2,7 +2,7 @@
 
 namespace ClangSharp
 {
-    public partial struct CXFile : IEquatable<CXFile>
+    internal partial struct CXFile : IEquatable<CXFile>
     {
         public CXString Name => clang.getFileName(this);
 

@@ -2,7 +2,7 @@ using System;
 
 namespace ClangSharp
 {
-    public partial struct CXEvalResult
+    internal  partial struct CXEvalResult
     {
         public CXEvalResult(IntPtr pointer)
         {

@@ -2,7 +2,7 @@ using System;
 
 namespace ClangSharp
 {
-    public partial struct CXIdxIBOutletCollectionAttrInfo
+    internal partial struct CXIdxIBOutletCollectionAttrInfo
     {
         public IntPtr attrInfo;
         public IntPtr objcClass;

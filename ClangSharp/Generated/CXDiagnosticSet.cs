@@ -2,7 +2,7 @@ using System;
 
 namespace ClangSharp
 {
-    public partial struct CXDiagnosticSet
+    internal  partial struct CXDiagnosticSet
     {
         public CXDiagnosticSet(IntPtr pointer)
         {

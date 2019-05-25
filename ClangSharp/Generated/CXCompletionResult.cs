@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public partial struct CXCompletionResult
+    internal partial struct CXCompletionResult
     {
         public CXCursorKind CursorKind;
         public CXCompletionString CompletionString;

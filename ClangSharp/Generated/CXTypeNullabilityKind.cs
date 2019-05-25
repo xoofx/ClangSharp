@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXTypeNullabilityKind
+    internal enum CXTypeNullabilityKind
     {
         CXTypeNullability_NonNull = 0,
         CXTypeNullability_Nullable = 1,

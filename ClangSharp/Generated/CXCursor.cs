@@ -2,7 +2,7 @@ using System;
 
 namespace ClangSharp
 {
-    public partial struct CXCursor
+    internal partial struct CXCursor
     {
         public CXCursorKind kind;
         public int xdata;

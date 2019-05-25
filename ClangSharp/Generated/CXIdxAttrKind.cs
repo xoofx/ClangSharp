@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXIdxAttrKind
+    internal enum CXIdxAttrKind
     {
         CXIdxAttr_Unexposed = 0,
         CXIdxAttr_IBAction = 1,

@@ -11,6 +11,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <LangVersion>7.3</LangVersion>
   </PropertyGroup>
 
   <!-- libclang name, unlikely to need overriding -->
@@ -30,7 +31,7 @@
   </PropertyGroup>
 
   <Target Name="GenerateClangSharp">
-      <Exec Command="dotnet run --m clang --p clang_ --namespace ClangSharp --output &quot;$(OutDir)/ClangSharp/Generated/&quot; --config multi-file --libraryPath &quot;$(LibClangName)&quot; --include &quot;$(LLVMIncludePath)&quot; --file &quot;$(LLVMIncludePath)/clang-c/Index.h&quot; --file &quot;$(LLVMIncludePath)/clang-c/CXString.h&quot; --file &quot;$(LLVMIncludePath)/clang-c/Documentation.h&quot; --file &quot;$(LLVMIncludePath)/clang-c/CXErrorCode.h&quot; --file &quot;$(LLVMIncludePath)/clang-c/BuildSystem.h&quot; --file &quot;$(LLVMIncludePath)/clang-c/CXCompilationDatabase.h&quot; --e clang_index_getClientEntity --e clang_index_setClientEntity --e clang_createTranslationUnitFromSourceFile --e clang_parseTranslationUnit --e clang_parseTranslationUnit2 --e clang_parseTranslationUnit2FullArgv --e clang_reparseTranslationUnit --e clang_codeCompleteAt --e clang_indexSourceFile --e clang_indexSourceFileFullArgv --e clang_disposeSourceRangeList --e clang_annotateTokens --e clang_annotateTokens --e clang_disposeTokens --e clang_tokenize --e clang_disposeStringSet --e clang_getCompletionParent --e clang_disposeCXPlatformAvailability --e clang_getCursorPlatformAvailability" />
+      <Exec Command="dotnet run --m clang --p clang_ --namespace ClangSharp --output &quot;$(OutDir)/ClangSharp/Generated/&quot; --config multi-file --libraryPath &quot;$(LibClangName)&quot; --include &quot;$(LLVMIncludePath)&quot; --file &quot;$(LLVMIncludePath)/clang-c/Index.h&quot; --file &quot;$(LLVMIncludePath)/clang-c/CXString.h&quot; --file &quot;$(LLVMIncludePath)/clang-c/Documentation.h&quot; --file &quot;$(LLVMIncludePath)/clang-c/CXErrorCode.h&quot; --file &quot;$(LLVMIncludePath)/clang-c/BuildSystem.h&quot; --file &quot;$(LLVMIncludePath)/clang-c/CXCompilationDatabase.h&quot; --e clang_index_getClientEntity --e clang_index_setClientEntity --e clang_createTranslationUnitFromSourceFile --e clang_parseTranslationUnit --e clang_parseTranslationUnit2 --e clang_parseTranslationUnit2FullArgv --e clang_reparseTranslationUnit --e clang_codeCompleteAt --e clang_indexSourceFile --e clang_indexSourceFileFullArgv --e clang_disposeSourceRangeList --e clang_annotateTokens --e clang_annotateTokens --e clang_disposeTokens --e clang_tokenize --e clang_disposeStringSet --e clang_getCompletionParent --e clang_disposeCXPlatformAvailability --e clang_getCursorPlatformAvailability --visibility internal" />
   </Target>
 
   <Target Name="GenerateLLVMSharp">

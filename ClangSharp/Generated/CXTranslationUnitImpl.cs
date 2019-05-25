@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public partial struct CXTranslationUnitImpl
+    internal partial struct CXTranslationUnitImpl
     {
     }
 }

@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXDiagnosticDisplayOptions
+    internal enum CXDiagnosticDisplayOptions
     {
         CXDiagnostic_DisplaySourceLocation = 0x01,
         CXDiagnostic_DisplayColumn = 0x02,

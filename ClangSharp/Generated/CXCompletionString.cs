@@ -2,7 +2,7 @@ using System;
 
 namespace ClangSharp
 {
-    public partial struct CXCompletionString
+    internal  partial struct CXCompletionString
     {
         public CXCompletionString(IntPtr pointer)
         {

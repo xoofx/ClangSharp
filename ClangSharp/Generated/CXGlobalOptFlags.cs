@@ -1,6 +1,6 @@
 namespace ClangSharp
 {
-    public enum CXGlobalOptFlags
+    internal enum CXGlobalOptFlags
     {
         CXGlobalOpt_None = 0x0,
         CXGlobalOpt_ThreadBackgroundPriorityForIndexing = 0x1,

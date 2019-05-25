@@ -2,7 +2,7 @@
 
 namespace ClangSharp
 {
-    public partial struct CXString : IDisposable
+    internal partial struct CXString : IDisposable
     {
         public string CString => clang.getCString(this);
 

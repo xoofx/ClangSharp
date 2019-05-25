@@ -2,7 +2,7 @@ using System;
 
 namespace ClangSharp
 {
-    public partial struct CXTranslationUnit
+    internal  partial struct CXTranslationUnit
     {
         public CXTranslationUnit(IntPtr pointer)
         {
