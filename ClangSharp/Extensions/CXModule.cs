@@ -1,4 +1,5 @@
-﻿namespace ClangSharp
+﻿#pragma warning disable 659, 649
+namespace ClangSharp
 {
     internal partial struct CXModule
     {

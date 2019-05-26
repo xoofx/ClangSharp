@@ -69,6 +69,8 @@ namespace ClangSharpPInvokeGenerator
 
             using (var sw = new StreamWriter(_outputFile))
             {
+                sw.WriteLine("#pragma warning disable 659, 649");
+
                 if (_usings.Count != 0)
                 {
                     foreach (var @using in _usings)
